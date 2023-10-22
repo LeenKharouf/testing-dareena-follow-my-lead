@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- Declare HTML doctype for file -->
+<html lang="en">
+    <head>
+        <!-- Character set sttribute specifies character encoding.
+        Failure to state this may result in malformed font characters -->
+        <meta charset="utf-8" />
+        <!-- Viewport metatag is required for proper responsive rendering -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Title tag is the first thing you see as google search result and the title in the broswer tab -->
+        <title>Leen Kharouf</title>
+        <link rel="icon" type="image/x-icon" href="../img/LK_logo.jpg">
+        <link href="../css/style_home.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <!-- icons -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> -->
+    
+
+         <!-- UIkit CSS -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.4/dist/css/uikit.min.css" />
+
+         <!-- UIkit JS -->
+         <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.4/dist/js/uikit.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.4/dist/js/uikit-icons.min.js"></script>
+ 
+
+        <script>
+            function toggleMenu(){
+              // 
+              const element = document.getElementById('menu');
+              // if it already has class open, remove it, if not, add it
+              element.classList.toggle('open');
+            }
+      
+          </script>
+
+
+    </head>
+
+    <body>
+        <header>
+            <a href="home.html">
+                <img src="../img/LK_logo.png" alt="logo">
+              </a> 
+            
+            <!-- this is the menu icon that's hidden by default on desktop/tablet but shown on mobile-->
+            <!-- wraps around with just as much space needed, displays inline -->
+            <span class="mobile-menu" onclick="toggleMenu()">
+                <span class="material-icons">menu</span>
+            </span>
+            <!-- main nav: always an unordered list of links -->
+            <nav>
+            <!-- menu class for styling, ID for javascript -->
+            <ul class="menu" id="menu">
+                <li><a href="#">about</a></li>
+                <li><a href="../Projects/index.html">projects</a></li>
+                <li><a href="../Art/index.html">art</a></li>
+            </ul>
+    
+            </nav>
+      </header>
+
+      <div class="intro">
+
+        <article>
+
+            <h1>Hello, I'm Leen</h1>
+            <p>
+                I'm a third year computer engineering student at NYU Abu Dhabi - welcome to my site!
+                Check out my recent projects down below or pay a visit to one of the pages in the nav bar
+                <!-- There are a lot of different (...and random) things to check out, so feel free to have a look around.  -->
+            </p>
+
+        </article>
+
+        <aside>
+            <img src="../img/me.jpg" alt="this is me!">
+            <!-- <a href="#" class="resume">Download Resume</a> -->
+            <a href="../LeenKharoufResumeOct23.pdf" class="resume" target="_blank" download="LeenKharoufResume">Download Resume</a>
+        </aside>
+
+
+    </div>
+   
+    <main>
+
+    <!-- cool PROJECTS TITLE -->
+        <!-- <section class="wrapper">
+            <div class="top">Projects</div>
+            <div class="bottom" aria-hidden="true">Projects</div>
+          </section> -->
+
+
+          <h1 class="uk-heading-line uk-text-center"><span>Pinned Projects</span></h1>
+    <!-- <h2>Pinned Projects</h2> -->
+    <div class="container">
+        
+
+        <div class="thumb">
+            <img src="../img/m5stack.png" alt="M5stack"/>
+            <article class="mask">
+                <h2>Fall Detection Device Project</h2>
+                <p>Developed a fall-detecting device using Arduino programming and M5Stack
+                    Core2 hardware to detect falls with user-friendly features.</p>
+                    <br><br>
+                    <a href="../Projects/index.html#flight">check it out</a>
+
+            </article>
+        </div>
+        
+        <div class="thumb">
+            <img src="../img/flight.png" alt="Flight Reservation System"/>
+            <article class="mask">
+                <h2>Flight Reservation System</h2>
+                <p>An interactive user interface to replicate real-world flight search and
+                    booking, using dynamic memory allocation, classes, and objected oriented
+                    programming concepts.</p>
+                    <br><br><br>
+                <a href="../Projects/index.html#project1">check it out</a>
+            </article>
+        </div>
+
+
+        <div class="thumb">
+            <img src="../img/parallax.png" alt="Parallax"/>
+            <article class="mask">
+                <h2>Parallax</h2>
+                <p>
+                    A 3D illustration designed in Procreate, and enhanced with 
+                    a dynamic parallax effect using JavaScript!
+                </p>
+                <br><br>
+                <a href="../Parallax/parallax.html">check it out</a>
+
+            </article>
+        </div>
+
+
+        <div class="thumb">
+            <img src="../img/madrid_square.jpg" alt="Lego Project"/>
+            <article class="mask">
+                <h2>LEGO Design Project</h2>
+                <p>Scaling down a real-world building into
+                     several LEGO models using BrickLink, varying in fidelity and scale.</p>
+                
+                
+                <br><br>
+                <a href="../Projects/index.html#lego">check it out</a>
+
+            </article>
+        </div>
+
+       
+        <br><br>
+
+        <p uk-margin>
+            <a href="../Projects/index.html"><button class="uk-button uk-button-default uk-button-large">Check out ALL PROJECTS </button></a>
+        </p>
+    
+    </div>
+
+   
+</main>
+
+
+<footer>
+
+    <p>© Leen Kharouf</p>
+    <br>
+    <p>Get in touch:</p>
+    
+    <p>leenkharouf@nyu.edu</p>
+    <img src="../img/giphy.gif" class="eyes"/>
+
+</footer>
+
+</body>
+  </html>
